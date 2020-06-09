@@ -27,5 +27,17 @@
   <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" />
     <EntitySet Name="testler" EntityType="Self.testler" />
+    <EntitySet Name="testler_v2" EntityType="TestDBModel.testler_v2" />
   </EntityContainer>
+  <EntityType Name="testler_v2">
+    <Key>
+      <PropertyRef Name="sira_no" />
+    </Key>
+    <Property Name="sira_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="test_no" Type="Int32" />
+    <Property Name="soru_no" Type="Int32" />
+    <Property Name="kullanici_id" Type="Int32" />
+    <Property Name="cevap" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="aktif_mi" Type="Boolean" />
+  </EntityType>
 </Schema>

@@ -27,5 +27,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="testler_v2">
+      <EntityTypeMapping TypeName="TestDBModel.testler_v2">
+        <MappingFragment StoreEntitySet="testler_v2">
+          <ScalarProperty Name="aktif_mi" ColumnName="aktif_mi" />
+          <ScalarProperty Name="cevap" ColumnName="cevap" />
+          <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
+          <ScalarProperty Name="soru_no" ColumnName="soru_no" />
+          <ScalarProperty Name="test_no" ColumnName="test_no" />
+          <ScalarProperty Name="sira_no" ColumnName="sira_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

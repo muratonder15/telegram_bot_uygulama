@@ -15,7 +15,7 @@ namespace TelegramFormTest
 using System;
     using System.Collections.Generic;
     
-public partial class testler
+public partial class testler_v2
 {
 
     public int sira_no { get; set; }
@@ -26,15 +26,7 @@ public partial class testler
 
     public Nullable<int> kullanici_id { get; set; }
 
-    public Nullable<int> a { get; set; }
-
-    public Nullable<int> b { get; set; }
-
-    public Nullable<int> c { get; set; }
-
-    public Nullable<int> d { get; set; }
-
-    public Nullable<int> e { get; set; }
+    public string cevap { get; set; }
 
     public Nullable<bool> aktif_mi { get; set; }
 
