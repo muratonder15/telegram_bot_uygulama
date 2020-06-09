@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDBModelStoreContainer" CdmEntityContainer="TestDBEntities">
+    <EntitySetMapping Name="kullanicilar">
+      <EntityTypeMapping TypeName="TestDBModel.kullanicilar">
+        <MappingFragment StoreEntitySet="kullanicilar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="telegram_id" ColumnName="telegram_id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="testler">
+      <EntityTypeMapping TypeName="TestDBModel.testler">
+        <MappingFragment StoreEntitySet="testler">
+          <ScalarProperty Name="sira_no" ColumnName="sira_no" />
+          <ScalarProperty Name="test_no" ColumnName="test_no" />
+          <ScalarProperty Name="soru_no" ColumnName="soru_no" />
+          <ScalarProperty Name="kullanici_id" ColumnName="kullanici_id" />
+          <ScalarProperty Name="a" ColumnName="a" />
+          <ScalarProperty Name="b" ColumnName="b" />
+          <ScalarProperty Name="c" ColumnName="c" />
+          <ScalarProperty Name="d" ColumnName="d" />
+          <ScalarProperty Name="e" ColumnName="e" />
+          <ScalarProperty Name="aktif_mi" ColumnName="aktif_mi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

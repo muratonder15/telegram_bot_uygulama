@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="kullanicilar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="telegram_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="testler">
+    <Key>
+      <PropertyRef Name="sira_no" />
+    </Key>
+    <Property Name="sira_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="test_no" Type="Int32" />
+    <Property Name="soru_no" Type="Int32" />
+    <Property Name="kullanici_id" Type="Int32" />
+    <Property Name="a" Type="Int32" />
+    <Property Name="b" Type="Int32" />
+    <Property Name="c" Type="Int32" />
+    <Property Name="d" Type="Int32" />
+    <Property Name="e" Type="Int32" />
+    <Property Name="aktif_mi" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" />
+    <EntitySet Name="testler" EntityType="Self.testler" />
+  </EntityContainer>
+</Schema>

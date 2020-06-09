@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="kullanicilar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="telegram_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="testler">
+    <Key>
+      <PropertyRef Name="sira_no" />
+    </Key>
+    <Property Name="sira_no" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="test_no" Type="int" />
+    <Property Name="soru_no" Type="int" />
+    <Property Name="kullanici_id" Type="int" />
+    <Property Name="a" Type="int" />
+    <Property Name="b" Type="int" />
+    <Property Name="c" Type="int" />
+    <Property Name="d" Type="int" />
+    <Property Name="e" Type="int" />
+    <Property Name="aktif_mi" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="TestDBModelStoreContainer">
+    <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="testler" EntityType="Self.testler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
